@@ -32,8 +32,8 @@ AFRAME.registerComponent('markers_start',{
 			//Adding text to each marker
 			var textEl = document.createElement('a-entity');
 			
-			textEl.setAttribute('markerEl.object3D.position','text');
-			textEl.setAttribute('text',{color: 'red', align: 'center', value:markerEl.object3D.position.x, width: '5.5'});
+			textEl.setAttribute('id.position','text');
+			textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.object3D.position.set(0, 0.7, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 
